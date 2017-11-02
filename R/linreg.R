@@ -33,6 +33,7 @@ linmodEst <- function(x, y) {
 
 linmod <- function(x, ...)
   UseMethod("linmod")
+
 linmod.default <- function(x, y, ...) {
   x <- as.matrix(x)
   y <- as.numeric(y)
